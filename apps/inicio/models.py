@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Alumno(models.Model):
     nombre = models.CharField(max_length=180)
     edad = models.IntegerField()
@@ -17,5 +18,4 @@ class Alumno(models.Model):
 
 
     def __unicode__(self):
-        return self.nombre
-    
+        return self.nombre    

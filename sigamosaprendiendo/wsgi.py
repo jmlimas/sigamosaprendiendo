@@ -11,7 +11,11 @@ import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "sigamosaprendiendo.settings")
 
 from django.core.wsgi import get_wsgi_application
+<<<<<<< HEAD
 #application = get_wsgi_application()
 
 from dj_static import Cling
 application = Cling(get_wsgi_application())
+=======
+application = get_wsgi_application()
+>>>>>>> 2cf06878d7ea69d846cbf3821250260cce6c9faf

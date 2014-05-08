@@ -38,3 +38,4 @@ class GaleriaViews(TemplateView):
 
 class ContactoViews(TemplateView):
 	template_name = 'home/contactanos.html'
+  

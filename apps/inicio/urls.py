@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
 
+
 from .views import AboutView,EstView,EstadisticaView,NewsViews,OrgagramaViews,GaleriaViews,ContactoViews
 from .views import AnteView,RegionView,PropoView,ObjeView,UbicaView
 
@@ -16,4 +17,4 @@ urlpatterns = patterns('',
 	url(r'^galeria/$',GaleriaViews.as_view(),name ='gale'),
 	url(r'^organigrama/$',OrgagramaViews.as_view(),name = 'news'),
 	url(r'^contacto/$',ContactoViews.as_view(),name='contacto'),
-) 
+)  

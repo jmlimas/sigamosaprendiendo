@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static from staticfiles %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css'%}">
+        <link rel="stylesheet" href="{% static 'css/main.css'%}">
+
+        <script src="{% static 'js/vendor/modernizr-2.6.2.min.js'%}"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!--<nav class = "navbar navbar-inverse"> esta fue la  que  me  sugirio irvin --> 
+    <nav class = "navbar navbar-inverse navbar-fixed-top">  
+      <div class="container-fluid">
+        <div class="navbar-header">
+         <button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>              
+         </button>
+          <!--<a href="#" class="navbar-brand">Devask</a> -->          
+            <div class = "imagen">
+             <img class="img-responsive" src="{% static 'img/libros1.jpg'%}">
+            <!--Sigamo Aprendiendo Laguna. -->     
+            </div> 
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class= "nav navbar-nav">
+                  <li><a href="/">Parepe</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quien Somos 
+                      <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/about">Quien somos</a></li>
+                        <li><a href="/ante">Antecedentes</a></li>
+                        <li><a href="/region">En la region lagunera</a></li>
+                        <li><a href="/proposito">Propositos</a></li>
+                        <li><a href="/objetivo">Objetivo</a></li>
+                        <li><a href="/ubica">Ubicacion</a></li>
+                      </ul>
+                  </li>
+                  <li class="divider"></li>
+                  <li><a href="/estructura">Infraestructura</a></li>
+                  <li><a href="/organigrama">Organigrama</a></li>
+                  <li><a href="/estadistica">Estadistica</a></li>          
+                  <li><a href="/galeria">Galeria</a></li>
+                  <li><a href="/news">Noticias</a></li>
+                  <li><a href="/contacto">Contactanos</a></li>
+              </ul>
+        </div> 
+      </div>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+      <hr>
+
+      <footer>
+          <div id="footer">
+               <div class="container">
+                  <p class="muted credit">Parepe</p>
+               </div>
+           </div>
+        <p>&copy; Company 2014</p>
+      </footer>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+  
+        <script src="{% static 'js/vendor/bootstrap.min.js'%}"></script>
+        <script src="{% static 'js/main.js'%}"></script> 
+    {% block scripts %} 
+    {% endblock %}   
+
+    </body>
+</html>

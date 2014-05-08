@@ -1,0 +1,27 @@
+{% extends 'base.html' %} 
+
+{% block title %} Parepe | Sigamos Aprendiendo{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<br>
+
+{% if info_enviado %}
+<br>
+		Gracias por enviar  tu comentario nos  pondremos en contacto con Usted..
+		<br>
+		Informacion enviada:
+		<br>
+		<p>Email Utilizado : {{email}} </p>
+		<p>Titulo: {{titulo}} </p>
+		<p>Texto Citado: </p><h3>{{texto}}</h3>
+{% else %}
+	 	 <form action="." method="POST"> 
+	 	 	{% csrf_token %}
+	 	 	{{form.as_p}}
+			<input type="submit" value = "Enviar">
+		</form>
+{% endif %}
+
+{% endblock %}

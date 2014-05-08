@@ -17,4 +17,4 @@ urlpatterns = patterns('',
 	url(r'^galeria/$',GaleriaViews.as_view(),name ='gale'),
 	url(r'^organigrama/$',OrgagramaViews.as_view(),name = 'news'),
 	url(r'^contacto/$',ContactoViews.as_view(),name='contacto'),
-)  
+)   # juan

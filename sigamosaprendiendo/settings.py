@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 #from unipath import Path
 
 """
 Django settngs for sigamosaprendiendo project.
-=======
- 
-
-"""
-Django settings for sigamosaprendiendo project.
->>>>>>> 2cf06878d7ea69d846cbf3821250260cce6c9faf
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -20,12 +13,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-<<<<<<< HEAD
 #BASE_DIR =  Path(__file__).ancestor(3)
-=======
-
-
->>>>>>> 2cf06878d7ea69d846cbf3821250260cce6c9faf
 
 
 # Quick-start development settings - unsuitable for production
@@ -35,19 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '(vlc7&p9@g&mwmu0^82n$cv%fa!z3k0$)xq@vpc%i0-%^=(pwi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-<<<<<<< HEAD
 DEBUG = False
 
 TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-=======
-DEBUG = True
-
-TEMPLATE_DEBUG = True
-
-ALLOWED_HOSTS = []
->>>>>>> 2cf06878d7ea69d846cbf3821250260cce6c9faf
 
 
 # Application definition
@@ -59,14 +39,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
     'south',
     'apps.home',
     'apps.inicio',
 
-=======
-    'apps.inicio',
->>>>>>> 2cf06878d7ea69d846cbf3821250260cce6c9faf
 )
 
 MIDDLEWARE_CLASSES = (
@@ -96,11 +72,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-<<<<<<< HEAD
 LANGUAGE_CODE = 'es-mx'
-=======
-LANGUAGE_CODE = 'en-us'
->>>>>>> 2cf06878d7ea69d846cbf3821250260cce6c9faf
 
 TIME_ZONE = 'UTC'
 
@@ -111,7 +83,6 @@ USE_L10N = True
 USE_TZ = True 
 
 STATIC_URL = '/static/'
-<<<<<<< HEAD
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 TEMPLATE_DIRS = os.path.join(BASE_DIR,'templates')
 
@@ -129,6 +100,3 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'sigamosaprendiendolaguna@outlook.com'
 EMAIL_HOST_PASSWORD = '******'
 EMAIL_USE_TLS = True
-=======
-TEMPLATE_DIRS = os.path.join(BASE_DIR,'templates')
->>>>>>> 2cf06878d7ea69d846cbf3821250260cce6c9faf

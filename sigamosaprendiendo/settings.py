@@ -23,11 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '(vlc7&p9@g&mwmu0^82n$cv%fa!z3k0$)xq@vpc%i0-%^=(pwi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -91,6 +91,7 @@ TEMPLATE_DIRS = os.path.join(BASE_DIR,'templates')
 #MEDIA_ROOT = RUTA_PROYECTO.child('media')
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = 'http://localhost:8000/media/'
+STATIC_ROOT = 'staticfiles'
  
 # Configuracion del correo
 #EMAIL_HOST = "smtp.gmail.com"

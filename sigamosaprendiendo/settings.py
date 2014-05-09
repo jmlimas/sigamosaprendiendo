@@ -98,5 +98,5 @@ STATIC_ROOT = 'staticfiles'
 EMAIL_HOST = "smtp-mail.outlook.com"
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'sigamosaprendiendolaguna@outlook.com'
-EMAIL_HOST_PASSWORD = '******'
+EMAIL_HOST_PASSWORD = 'lunalunera+'
 EMAIL_USE_TLS = True

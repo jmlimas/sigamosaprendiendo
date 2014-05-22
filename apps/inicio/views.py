@@ -38,4 +38,9 @@ class GaleriaViews(TemplateView):
 
 class ContactoViews(TemplateView):
 	template_name = 'home/contactanos.html'
+
+class NormaView(TemplateView):
+	template_name = 'home/norma.html'
   
+class MatView(TemplateView):
+	template_name='home/materiales.html'

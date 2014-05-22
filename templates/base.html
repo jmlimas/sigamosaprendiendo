@@ -24,26 +24,30 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <!--<nav class = "navbar navbar-inverse"> esta fue la  que  me  sugirio irvin --> 
-    <nav class = "navbar navbar-inverse navbar-fixed-top">  
-      <div class="container-fluid">
+    <nav class = "navbar navbar-personalizado">  
+      <div class="container">
+
         <div class="navbar-header">
-         <button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>              
+         <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+          <span class="icon-bar app-bar"></span>
+          <span class="icon-bar app-bar"></span>
+          <span class="icon-bar app-bar"></span>              
          </button>
-           <a href="/" class="navbar-brand">PAREPE</a> 
+           <a href="/" class="navbar-brand link-personalizado">PAREPE</a> 
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class= "nav navbar-nav">
+
+        <div class="collapse navbar-collapse" id="menu">
+              <ul class= "nav navbar-nav nav-personalizado">
                     <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quien Somos 
                       <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu app-submenu">
                         <li><a href="/about">Quien somos</a></li>
                         <li><a href="/ante">Antecedentes</a></li>
                         <li><a href="/region">En la region lagunera</a></li>
                         <li><a href="/proposito">Propositos</a></li>
+                        <li><a href="/norma">Normatividad y Operaciones</a></li>
+                        <li><a href="/mat">Materiales y Recursos</a></li>
                         <li><a href="/objetivo">Objetivo</a></li>
                         <li><a href="/ubica">Ubicacion</a></li>
                       </ul>
@@ -65,13 +69,10 @@
     {% endblock %}
       
 
-      <footer>
-          <div id="footer">
-               <div class="container">
-                  <p class="muted credit"> </p>
-               </div>
-           </div>
-        <p>&copy; Company 2014</p>
+      <footer class="app-footer">
+        <div class="container">
+          <p>&copy; jmlc-Dev 2014</p>
+         </div>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>

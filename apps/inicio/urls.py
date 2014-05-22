@@ -2,7 +2,7 @@ from django.conf.urls import patterns, include, url
 
 
 from .views import AboutView,EstView,EstadisticaView,NewsViews,OrgagramaViews,GaleriaViews,ContactoViews
-from .views import AnteView,RegionView,PropoView,ObjeView,UbicaView
+from .views import AnteView,RegionView,PropoView,ObjeView,UbicaView,NormaView,MatView
 
 urlpatterns = patterns('',
 	url(r'^about/$',AboutView.as_view(),name = 'about'),
@@ -17,4 +17,7 @@ urlpatterns = patterns('',
 	url(r'^galeria/$',GaleriaViews.as_view(),name ='gale'),
 	url(r'^organigrama/$',OrgagramaViews.as_view(),name = 'news'),
 	url(r'^contacto/$',ContactoViews.as_view(),name='contacto'),
+	url(r'^norma/$',NormaView.as_view(),name = 'norma'),
+	url(r'^mat/$',MatView.as_view(),name = 'norma'),
+	
 )   # juan

@@ -1,20 +1,66 @@
 {% extends 'base.html' %} 
 
 {% block title %} Parepe | Sigamos Aprendiendo{% endblock %}
-
 {% block content %}
-<br>
-<br>
-<br>
-
-<p>
-ESTADISITCA
-
-<ul>
-	<li> POR HOSPITAL</li>
-	<li> POR NIVEL EDUCATIVO</li>
-	<li> POR REGION.</li>
-</ul>
-
-
+{% load static from staticfiles %}
+<div class="container">
+       <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <h4>ESTADISITCA:</h4>
+                    <p class="enc-tabla">En cuestión de cobertura la población atendida que se beneficia con esta modalidad de atención educativa proporcionada por el Programa Sigamos Aprendiendo… en el Hospital en la Región Lagunera de Durango es la siguiente:</p>
+                    <p class="enc-tabla">ATENCION BRINDADA AL 30 DE ABRL 2014</p>	
+                    <p class="enc-tabla">Por hospitales:</p>
+                   
+						<table  class="table"  border="2" width="600">
+							<tr>
+								<th>Hospital</th>
+								<th>Total</th>
+							</tr>
+							<tr>
+								<td>HOSPITAL GENERAL DE LERDO, DGO.</td>
+								<td>161</td>
+							</tr>
+							<tr>
+								<td>HOSPITALGENERAL DE GOMEZ  PALACIO, DGO.</td>
+								<td>68</td>
+								<tr>
+								<td>Total:</td>
+								<td>229</td>
+							</tr>							
+						</table>
+						<p class="enc-tabla">Por nivel educativo:</p>
+						<table class="table" border="2" width="900">
+								<tr>
+									<th>Niveles</th>
+									<th>(sin edad escolar) Estimulacion Temprana</th>
+									<th>Preescolar</th>
+									<th>Primaria</th>
+									<th>Ssecundaria</th>
+									<th>Escolarizados</th>
+									<th>No Escolarizados</th>
+									<th>Total</th>
+								</tr>
+								<tr>
+									<td>No. de Atencion brindada</td>
+									<td>75</td>
+									<td>20</td>
+									<td>89</td>
+									<td>17</td>
+									<td>129</td>
+									<td>28</td>
+									<td>229</td>
+								</tr>								 							
+						</table>  
+						<p class="enc-tabla">En nuestra region en el estado de Durango</p> 
+						<table class="table" border="2" width="600">
+								<tr>
+									<th>Por region Lagunera</th>									
+								</tr>
+								<tr>								
+									<td>229</td>
+								</tr>								 							
+						</table>                 
+                </div>            
+        </div>
+</div>
 {% endblock %}

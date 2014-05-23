@@ -32,17 +32,24 @@ header{
 
 .nav-personalizado>li>a:hover{
 	background-color: #8F32C5;
+	text-shadow:none;
 }
 .app-submenu{
-	background-color: #8F32C5
+	color:white;
+	font-weight: bold;
+	background-color: #B5ACDF;
+	border-color: black;
+
 }
 .app-submenu>li>a:hover, .app-submenu>li>a:focus{
+	font-weight: bold;
 	background-color: #8F32C5;
+	border-color:black;
 }
 
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
-background-color: #8F32C5;
-border-color: #428bca;
+	background-color:#8F32C5;
+    border-color: black;
 }
 
 .app-bar{

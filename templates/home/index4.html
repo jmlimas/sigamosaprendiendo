@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} Parepe | Sigamos Aprendiendo{% endblock %}
+{% load static from staticfiles %}
+{% block content %} 
+
+ <div class="carousel slide" id="miSlider" data-ride="carousel">
+
+   <ol class="carousel-indicators">
+     <li data-target="#miSlider" data-slide-to="0" class="active"></li>
+     <li data-target="#miSlider" data-slide-to="1"></li>
+     <li data-target="#miSlider" data-slide-to="2"></li>
+   </ol>
+
+   <div class="carousel-inner">
+
+     <div class="item active">
+         <img src="{% static 'img/alumno26.jpg'%}" alt="imagen2">
+     </div>
+      <div class="item">
+       <img src="{% static 'img/alumno24.jpg'%}" alt="imagen2">
+     </div>
+      <div class="item">
+       <img src="{% static 'img/alumno22.jpg'%}" alt="imagen3">
+     </div>
+
+   </div>
+
+
+ </div>
+{% endblock %}

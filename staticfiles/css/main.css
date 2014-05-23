@@ -113,6 +113,8 @@ border-color: #428bca;
 } 
 .app-footer{
 	background:#050001; 
+	color: white;
+	font-size: 14px;
 	position:absolute; 
 	bottom:0; 
 	width:100%; 

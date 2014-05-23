@@ -13,8 +13,6 @@ header{
   background:#C7DD8B; 
   height:30px; 
 }
-
-
 .navbar-personalizado{
 	background-color: #541A95;
 	border-radius: 0;
@@ -56,7 +54,7 @@ border-color: #428bca;
 	text-align: center;
 }
 .app-titulo{
-	font-size: 40px;
+	font-size: 30px;
 }
 .app-desc{
 	font-size: 18px;

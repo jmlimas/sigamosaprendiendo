@@ -3,23 +3,26 @@
 {% block title %} Parepe | Sigamos Aprendiendo{% endblock %}
 
 {% block content %}
-<br>
-<br>
-<br>
-  <div class="contanier">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
-                <h3>En Región Laguna:</h3>
-                <p class="margin">En Gómez Palacio, Dgo se inicia en 2009, en el aula de enseñanza del Hospital 
-                  General de Gómez Palacio Dgo. y en el año 2010 el Hospital General de Ciudad
-                  Lerdo Dgo. A partir de septiembre de 2009, se establece como 
-                  “Proyecto de Prevención y Atención al Rezago Educativo por Enfermedad”.
-                  Actualmente un total 30 entidades federativas están incorporadas al programa 
-                  SIGAMOS APRENDIENDO EN EL HOSPITAL con 101 aulas hospitalarias a nivel nacional.</p>
-            </div>
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"></div>            
-        </div> 
-            <hr>         
-            <br>
-  </div>   
+{% load static from staticfiles %}
+
+   <div class="container">
+                <p class="margin">En Región Laguna:</p>
+                <p class="app-justificar">  EN REGIÓN LAGUNA:
+                  A partir de septiembre de 2009, se establece como “Proyecto de Prevención y Atención al Rezago Educativo por Enfermedad”. 
+
+                  Siendo en ese año cuando en la Ciudad de Gómez Palacio, Dgo; se inicia  en el aula de enseñanza del Hospital General, donde actualmente está ubicada el aula hospitalaria y   en el año 2010  en el Hospital General de Ciudad Lerdo Dgo.</p> 
+                   
+        <div class="row">                 
+                <div class="col-xs-12 col-sm-4 color1">
+                     <img class="img" src="{% static 'img/region1.jpg' %}" WIDTH=180 HEIGHT=200  class="img-thumbnail">          
+                </div>
+                <div class="col-xs-12 col-sm-4 color1">
+                     <img class="img" src="{% static 'img/region2.jpg' %}" WIDTH=180 HEIGHT=200 class="img-responsive">
+                 </div>
+                 <div class="col-xs-12 col-sm-4 color1">
+                     <img class="img" src="{% static 'img/region3.jpg' %}" WIDTH=180 HEIGHT=200 class="img-responsive">
+                 </div>
+        </div>      
+      </div>  
+
 {% endblock %}

@@ -1,27 +1,26 @@
 {% extends 'base.html' %}
-
 {% block title %} Parepe | Sigamos Aprendiendo{% endblock %}
 
 {% block content %}
-<br>
-<br>
-<br>
+{% load static from staticfiles %}
 
-  <div class="contanier">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
-              <h3>ANTECEDENTES:</h3>
-              <p class="margin"> 
-                Inició operaciones de manera oficial el 9 de marzo de 2005 con el nombre de Programa 
-                  “SIGAMOS APRENDIENDO… EN EL HOSPITAL” en cinco hospitales del Distrito Federal.
-                  El Programa “Sigamos aprendiendo…en el Hospital” Se enmarcó principalmente en la 
-                  firma de bases de colaboración entre el Sector Educativo y el Sector Salud y cuenta con la participación activa y permanente de diversas instancias tales como: el Consejo Nacional de Fomento Educativo (CONAFE), el Instituto Nacional para la Educación de los Adultos (INEA), el Consejo Nacional para la Cultura y las Artes (CONACULTA), el Consejo Nacional de Educación para la Vida y el Trabajo (CONEVyT). Asimismo se cuenta con la participación de algunas Empresas y Organizaciones de la Sociedad Civil.
-                  En el corto plazo, el programa SIGAMOS se extendió a otros hospitales ubicados en la 
-                  Ciudad de México y al interior del país. El primer estado que se incorporó al programa fue Aguascalientes, seguido por Nuevo León, en septiembre de 2006.En el estado de Durango: Se pone en marcha en marzo del 2006 atendiendo niños, niñas y jóvenes pacientes de los hospitales principales de la ciudad de Durango.</p>
-            </div>
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"></div>            
-        </div> 
-            <hr>         
-            <br>
-  </div>   
+ <div class="container">
+                <p class="margin">En Región Laguna:</p>
+                <p class="margin"> 
+                Inició operaciones de manera oficial el 9 de marzo de 2005 con el nombre de Programa “SIGAMOS APRENDIENDO… EN EL HOSPITAL” en cinco hospitales del Distrito Federal. El Programa “Sigamos aprendiendo…en el Hospital” Se enmarcó principalmente con la firma de bases de colaboración entre el Sector Educativo y el Sector Salud y cuenta con la participación activa y permanente de diversas instancias tales como: el Consejo Nacional de Fomento Educativo (CONAFE), el Instituto Nacional para la Educación de los Adultos (INEA), el Consejo Nacional para la Cultura y las Artes (CONACULTA), el Consejo Nacional de Educación para la Vida y el Trabajo (CONEVyT). Asimismo  participan  algunas Empresas y Organizaciones de la Sociedad Civil.
+                En el corto plazo, el programa SIGAMOS se extendió a otros hospitales ubicados en la Ciudad de México y al interior del país. El primer estado que se incorporó al programa fue Aguascalientes, seguido por Nuevo León, en septiembre de 2006.
+                En el estado de Durango: Se pone en marcha en marzo del 2006 atendiendo niños, niñas y jóvenes pacientes de los hospitales principales de la ciudad de Durango.</p>
+ 
+        <div class="row">                 
+                <div class="col-xs-12 col-sm-4 color1">
+                     <img class="img" src="{% static 'img/alumno32.jpg' %}" WIDTH=180 HEIGHT=200  class="img-thumbnail">          
+                </div>
+                <div class="col-xs-12 col-sm-4 color1">
+                     <img class="img" src="{% static 'img/alumno33.jpg' %}" WIDTH=180 HEIGHT=200 class="img-responsive">
+                 </div>
+                 <div class="col-xs-12 col-sm-4 color1">
+                     <img class="img" src="{% static 'img/alumno34.jpg' %}" WIDTH=180 HEIGHT=200 class="img-responsive">
+                 </div>
+        </div>      
+      </div>  
 {% endblock %}

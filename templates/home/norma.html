@@ -1,16 +1,23 @@
 {% extends 'base.html' %}
 {% block title %} Parepe | Sigamos Aprendiendo{% endblock %}
+
 {% block content %}
-<div class="container">
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<h3>Normatividad y Operaciones:</h3>  
-					<p class="app-justificar">ESTE PROYECTO OPERA PRINCIPALMENTE EN LOS 
-					HOSPITALES DE 2do. Y 3er. NIVEL, PERO EN LA REGION LAGUNA ACTUALMENTE
-					FUNCIONA EN LOS 2 HOSPITALES GENERALES, PERTENECIENTES AL 2do. NIVEL. </p>
-                </div>
-                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">                    
-                </div>
-            </div>
-</div>
+
+{% load static from staticfiles %}
+
+   <div class="container">
+                <p class="margin">NORMATIVIDAD Y OPERACIÓN:</p>
+                <p class="app-justificar">  Este proyecto opera principalmente en los hospitales de 2do. Y  3er. nivel, pero en la Región Laguna actualmente funciona en los 2 Hospitales Generales, pertenecientes al 2do. Nivel.</p> 
+                   
+        <div class="row">                 
+                 
+                <div class="col-xs-12 col-sm-6">
+                     <img class="img" src="{% static 'img/norma1.jpg' %}" WIDTH=180 HEIGHT=200 class="img-responsive">
+                 </div>
+                 <div class="col-xs-12 col-sm-6">
+                     <img class="img" src="{% static 'img/norma2.jpg' %}" WIDTH=180 HEIGHT=200 class="img-responsive">
+                 </div>
+        </div>      
+      </div>  
+
 {% endblock %}

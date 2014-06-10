@@ -1,14 +1,27 @@
 {% extends 'base.html' %}
 {% block title %} Parepe | Sigamos Aprendiendo{% endblock %}
+
 {% block content %}
-<div class="container">
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<h3>Materiales y Recursos:</h3>  
-					<p class="app-justificar">EQUIPO MULTIMEDIA, DE CÓMPUTO, MATERIAL DIDACTICO, LUDICO Y DE BIBLIOTECA. </p>
-                </div>
-                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">                    
-                </div>
-            </div>
-</div>
+{% load static from staticfiles %}
+
+   <div class="container">
+                <p class="margin">MATERIALES Y RECURSOS:</p>
+                <p class="app-justificar">Equipo multimedia, de cómputo, material didáctico, lúdico y de biblioteca.</p> 
+                   
+        <div class="row">     
+                <div class="col-xs-12 col-sm-3">
+                     <img class="img" src="{% static 'img/mat2.jpg' %}" WIDTH=180 HEIGHT=200 class="img-responsive">
+                 </div>
+                 <div class="col-xs-12 col-sm-3">
+                     <img class="img" src="{% static 'img/mat3.jpg' %}" WIDTH=180 HEIGHT=200 class="img-responsive">
+                 </div>
+                 <div class="col-xs-12 col-sm-3">
+                     <img class="img" src="{% static 'img/mat4.jpg' %}" WIDTH=180 HEIGHT=200 class="img-responsive">
+                 </div>
+                <div class="col-xs-12 col-sm-3">
+                     <img class="img" src="{% static 'img/mat5.jpg' %}" WIDTH=180 HEIGHT=200 class="img-responsive">
+                 </div>
+        </div>      
+      </div>  
+
 {% endblock %}

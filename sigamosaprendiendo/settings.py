@@ -102,6 +102,6 @@ STATIC_ROOT = 'staticfiles'
 
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'jmlimas@gmail.com'
-EMAIL_HOST_PASSWORD = '342408++'
+EMAIL_HOST_USER = 'sigamosaprendiendolaguna@gmail.com'
+EMAIL_HOST_PASSWORD = 'bebeyluna'
 EMAIL_USE_TLS = True

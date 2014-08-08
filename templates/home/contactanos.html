@@ -10,12 +10,7 @@
 {% if info_enviado %}
 <br>
 		Gracias por enviar  tu comentario nos  pondremos en contacto con Usted..
-		<br>
-		Informacion enviada:
-		<br>
-		<p>Email Utilizado : {{email}} </p>
-		<p>Titulo: {{titulo}} </p>
-		<p>Texto Citado: </p><h3>{{texto}}</h3>
+		<br>	 
 {% else %}
 	 	 <form action="." method="POST"> 
 	 	 	{% csrf_token %}

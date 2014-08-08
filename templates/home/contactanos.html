@@ -15,11 +15,11 @@
 	 	 <form action="." method="POST"> 
 	 	 	{% csrf_token %}
 	 	 	{{form.as_p}}
-			<div class="panel-footer color-footer">
-                <button type="submit" class="btn btn-primary" value="Enviar">
-                     Enviar 
-                </button>
-            </div>
+			
+            <button type="submit" class="btn btn-primary" value="Enviar">
+                 Enviar 
+            </button>
+           
 		</form>
 {% endif %}
 

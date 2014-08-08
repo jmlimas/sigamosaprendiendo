@@ -3,12 +3,35 @@
 {% block title %} Parepe | Sigamos Aprendiendo{% endblock %}
 
 {% block content %}
-<br>
-<br>
-<br>
-<p>
-Noticias:
-<p>En Construccion..!!</p>
+{% load static from staticfiles %}
+
+  
+   <section class="app-seccion2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                    	<br>
+                    	<br>
+                        <img src="{% static 'img/news2.jpg' %}" WIDTH=480 HEIGHT=300  class="img-responsive"> 
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <br>
+                        <h2 class="app-titulo2">SIGAMOS APRENDIENDO... EN EL HOSPITAL.</h2>
+                        <p class="app-separador"></p>
+                        <p class="app-justificar">¡SIGAMOS APRENDIENDO LAGUNA ESTA DE VUELA EN LAS AULAS HOSPITALARIAS!.</p>
+
+                        <div class="media app-media">                            
+                            <div class="media-body">                                
+                                <p class="app-justificar">El receso escolar está por terminar, por lo que a partir  del  18 de agosto  del presente año,   día en que el ciclo escolar: 2014-2015 inicia; se reanuda la atención educativa en las aulas hospitalarias  en los Hospitales Generales de Gómez Palacio y Lerdo Dgo. 
+								Por lo que nuevamente  las Maestras Hospitalarias brindaran atención educativa personalizada, adecuada a la edad y al nivel escolar de los alumnos hospitalizados, a través de las actividades como: Leer, inventar cuentos, colorear, dibujar, investigar, analizar y jugar con las computadoras, resolver problemas, trabajar las matemáticas en forma divertida, actividades interactivas con la computadoras, armar rompecabezas y expresarse artísticamente por medio del dibujo y la pintura.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 {% endblock %}

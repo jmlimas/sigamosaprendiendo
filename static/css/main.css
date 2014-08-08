@@ -47,3 +47,21 @@ margin-left:50px;
 
 .logo-nav{display:block;width:100%;}
 .logo-nav img{width:400px;max-width:100%}
+
+.app-footer{
+	text-align: center;
+	background: #f7f8fa;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 100px 0;
+}
+.app-empresa{
+	margin-bottom: 50px;
+}
+.app-icon1{
+	background-color: #919191;
+	color: white;
+	padding: 10px;
+	border-radius: 4px;
+	margin-left: 10px;
+}

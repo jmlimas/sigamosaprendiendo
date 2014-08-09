@@ -19,5 +19,6 @@ urlpatterns = patterns('',
 	url(r'^contacto/$',ContactoViews.as_view(),name='contacto'),
 	url(r'^norma/$',NormaView.as_view(),name = 'norma'),
 	url(r'^mat/$',MatView.as_view(),name = 'norma'),
+	url(r'^canaliza/$','apps.inicio.views.cana_view',name= 'canaliza_alumno'),
 	
-)   # juan
+)    

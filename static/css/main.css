@@ -3,7 +3,7 @@ body
 	background: #858F1;
 	color: BLACK;
 	font-family: "Open Sans",serifa;
-	font-size: 16px;
+	font-size: 12px;
 	text-align: left;
 }
 
@@ -64,4 +64,9 @@ margin-left:50px;
 	padding: 10px;
 	border-radius: 4px;
 	margin-left: 10px;
+}
+.form-horizontal{
+	font-size: 12px;
+	background-color: red;
+
 }

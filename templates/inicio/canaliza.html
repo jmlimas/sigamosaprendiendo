@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{%block content%}
+{% if info_enviado %}
+<br>
+		Gracias por enviar  tu comentario nos  pondremos en contacto con Usted..
+		<br>	 
+{% else %}
+
+		{%load static from staticfiles %} 
+		<form action="." method="POST" class="form-horizontal">
+			{% csrf_token %}	
+			<div class="panel panel-primary">
+				<p>Maestro (a):   
+		         Si ya  ha detectado  a  un  alumno  que  está insistiendo a clases, por motivo de salud y se encuentra hospitalizado, favor de  proporcionar la siguiente información.</p> 
+		         <p>  Darle clic  para enviar a la Coordinación del Programa Sigamos Aprendiendo… en el Hospital, y  nosotros nos ponemos en contacto contigo. </p>
+				<div class="panel-heading">Canaliza Alumno</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<div class="form-group">
+									<label for="escuela" class="hidden-xs col-sm-2">Escuela:</label>
+									<div class="col-sm-10">
+										{{form.Escuela}}
+										{{form.Escuela.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="Turno" class="hidden-xs col-sm-2">Turno:</label>
+									<div class="col-sm-10">
+										{{form.Turno}}
+										{{form.Turno.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="Clave" class="hidden-xs col-sm-2">CCT:</label>
+									<div class="col-sm-10">
+										{{form.Clave}}
+										{{form.Clave.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="text" class="hidden-xs col-sm-2">Zona:</label>
+									<div class="col-sm-10">
+										{{form.Zona}}
+										{{form.Zona.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="rfc" class="hidden-xs col-sm-2">Direccion Escuela:</label>
+									<div class="col-sm-10">
+										{{form.DirEscl}}
+										{{form.DirEscl.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="TelEsc" class="hidden-xs col-sm-2">Telefono Escuela:</label>
+									<div class="col-sm-10">
+										{{form.TelEsc}}
+										{{form.TelEsc.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="Maestro" class="hidden-xs col-sm-2">Maestro(a):</label>
+									<div class="col-sm-10">
+										{{form.Maestro}}
+										{{form.Maestro.errors}}
+									</div>
+								</div>		
+								<div class="form-group">
+									<label for="Email" class="hidden-xs col-sm-2">Email Maestro:</label>
+									<div class="col-sm-10">
+										{{form.Email}}
+										{{form.Email.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="Alumno" class="hidden-xs col-sm-2">Alumno:</label>
+									<div class="col-sm-10">
+										{{form.Alumno}}
+										{{form.Alumno.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="FechaNci" class="hidden-xs col-sm-2">Fecha Nacimiento:</label>
+									<div class="col-sm-10">
+										{{form.FechaNci}}
+										{{form.FechaNci.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="Edad" class="hidden-xs col-sm-2">Edad:</label>
+									<div class="col-sm-10">
+										{{form.Edad}}
+										{{form.Edad.errors}}
+									</div>
+								</div>		
+							</div>
+							
+							<div class="col-xs-12 col-sm-6">
+								
+								<div class="form-group">
+									<label for="Grado" class="hidden-xs col-sm-2">Grado:</label>
+									<div class="col-sm-10">
+										{{form.Grado}}
+										{{form.Grado.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="DirAlumno" class="hidden-xs col-sm-2">Direccion Alumno:</label>
+									<div class="col-sm-10">
+										{{form.DirAlumno}}
+										{{form.DirAlumno.errors}}
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="TelAlumno" class="hidden-xs col-sm-2">TelAlumno:</label>
+									<div class="col-sm-10">
+										{{form.TelAlumno}}
+										{{form.TelAlumno.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="Apoyo" class="hidden-xs col-sm-2">Esta en Grupo de Apoyo?:</label>
+									<div class="col-sm-10">
+										{{form.Apoyo}}
+										{{form.Apoyo.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="Porque" class="hidden-xs col-sm-2">Motivo:</label>
+									<div class="col-sm-10">
+										{{form.Porque}}
+										{{form.Porque.errors}}
+									</div>
+								</div>			
+								<div class="form-group">
+									<label for="Amigo1" class="hidden-xs col-sm-2">Amigo1:</label>
+									<div class="col-sm-10">
+										{{form.Amigo1}}
+										{{form.Amigo1.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="Amigo2" class="hidden-xs col-sm-2">Amigo2:</label>
+									<div class="col-sm-10">
+										{{form.Amigo2}}
+										{{form.Amigo2.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="FechaEnfe" class="hidden-xs col-sm-2">Fecha De Inicio de Enfermedad:</label>
+									<div class="col-sm-10">
+										{{form.FechaEnfe}}
+										{{form.FechaEnfe.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="NomMadre" class="hidden-xs col-sm-2">Madre:</label>
+									<div class="col-sm-10">
+										{{form.NomMadre}}
+										{{form.NomMadre.errors}}
+									</div>
+								</div>	
+								<div class="form-group">
+									<label for="NomPadre" class="hidden-xs col-sm-2">Padre:</label>
+									<div class="col-sm-10">
+										{{form.NomPadre}}
+										{{form.NomPadre.errors}}
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+		             <button type="submit" class="btn btn-primary" value="Enviar">
+		                 Enviar 
+		            </button>
+				
+			</div>
+
+		</form> 
+{% endif %}
+{%endblock%}
